@@ -1,0 +1,152 @@
+/*CSS RESET*/
+html, body, div, table{
+	margin:0;
+	border:0;
+	padding:0;
+	background:none;
+}
+input:focus{
+	outline:none;
+}
+a, a:link, a:focus{text-decoration:none;color:blue;}
+a:hover{text-decoration:underline;}
+
+
+/* Styles */
+body{
+	font-size:14px;
+}
+
+#loading{
+	position:absolute;
+	top:200px;
+	left:50%;
+	margin-left:-16px;
+	display: inline;
+}
+
+#wrapper{
+	width:960px;
+	margin:0 auto;
+}
+
+/** blocos principais da pagina */
+#wrapper #header{
+	border: 1px solid #ccc;
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+#wrapper #container{
+	margin: 10px 0 0 0;
+}
+#wrapper #footer{}
+
+#wrapper #header h1{
+	/*display: none;*/
+	font-size:20px;
+	margin:10px 0;
+	padding:0;
+	text-align:center;
+}
+#wrapper #header h2{
+	display: none;
+}
+
+#wrapper #header #search{
+	text-align: center;
+}
+#wrapper #header #frm_search{
+
+}
+#wrapper #header #frm_search label{
+	width: 50px;
+}
+#wrapper #header #frm_search input,
+#wrapper #header #frm_search select{
+	width:150px;
+	border: 1px solid #ccc;
+	padding:3px 7px;
+}
+input.show_youtube{
+	width:20px !important;
+}
+#wrapper #header #frm_search input.send{
+	width:50px;
+	background-color: #eee;
+	cursor:pointer;
+}
+#wrapper #header #frm_search input.send:hover{
+	background-color: #ddd;
+}
+
+#search_option{
+	display:none;
+	width: 60%;
+	margin:10px auto;
+	border:1px solid #ddd;
+	padding:10px 0px;
+}
+
+
+
+/** tabela para exibir a lista do lastfm */
+table.lastfm{
+	width: 100%;
+	border: none;
+}
+table.lastfm tr{}
+table.lastfm tr td{
+	/*border-bottom:1px solid #999;*/
+	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	background: #fff;
+	padding: 6px 6px 6px 12px;
+	color: #4f6b72;
+}
+table.lastfm tr:hover td{
+	/*background-color: #ddd !important;
+	color: #000 !important;*/
+}
+table.lastfm tr:nth-child(even) td,
+table.lastfm td td.bg_line{
+	/*background-color: #eee;*/
+	background: #F5FAFA;
+	color: #797268;
+}
+table.lastfm tr td:first-child{
+	border-left: 1px solid #C1DAD7;	
+}
+
+table.lastfm .tbl_header{}
+table.lastfm .tbl_header td{
+	/*font-weight:bold;
+	border-bottom:2px solid #333;*/
+	font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #4f6b72;
+	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	border-top: 1px solid #C1DAD7;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 6px 6px 6px 12px;
+	background: #CAE8EA url('../images/bg_header.jpg') no-repeat;
+}
+
+/** mensagens */
+.msg{
+	border: 1px solid #333;
+	font-weight:bold;
+	padding: 20px 0;
+	width:100%;
+	display:block;
+	text-align:center;
+}
+
+.msg_error{
+	color: red;
+}
